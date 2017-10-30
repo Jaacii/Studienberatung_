@@ -15,7 +15,7 @@ Scanner input = new Scanner (System.in) ;
 	
 	String wiss;
 	
-	boolean loop = true;
+	
 	
 	boolean loop3 = true;
 	
@@ -48,6 +48,26 @@ Scanner input = new Scanner (System.in) ;
 	
 	
 	
+		
+	//Frage 2
+	System.out.println("Bist du Fachabitur Y N");											
+	while (loop2 == true) {
+	fachabi = input.next();	
+	if (fachabi.equals("y") || fachabi.equals("Y") ) {
+	fachabi = "Ja";  
+	System.out.println (fachabi); 
+	loop2 = false;
+	
+	}
+	 else if (fachabi.equals("N") || fachabi.equals("n")) {
+		fachabi = "Nein";  
+		System.out.println (fachabi); 
+		loop2 = false;
+		
+		}
+	else { System.out.println("Falsche Eingabe. Bitte Y oder N antworten.");
+	loop2 = true;
+	}
 	
 	
 	
