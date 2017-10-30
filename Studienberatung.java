@@ -6,12 +6,12 @@ public static void main (String[] args) {
 
 Scanner input = new Scanner (System.in) ;
 	String abi;
-<<<<<<< HEAD
+
 	String fachabi;
 	
 	boolean loop = true;
 	boolean loop2 = false;
-=======
+
 	
 	String wiss;
 	
@@ -19,7 +19,7 @@ Scanner input = new Scanner (System.in) ;
 	
 	boolean loop3 = true;
 	
->>>>>>> hast-du-Abitur
+
 	
 //Frage 1 
 	System.out.println("Hast du Abitur Y N ");											
