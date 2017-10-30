@@ -15,7 +15,8 @@ Scanner input = new Scanner (System.in) ;
 	
 	String wiss;
 	
-	
+	String beruf;
+	boolean loop4 = false;
 	
 	boolean loop3 = true;
 	
@@ -57,13 +58,13 @@ Scanner input = new Scanner (System.in) ;
 	fachabi = "Ja";  
 	System.out.println (fachabi); 
 	loop2 = false;
-	
+	loop3 = true;
 	}
 	 else if (fachabi.equals("N") || fachabi.equals("n")) {
 		fachabi = "Nein";  
 		System.out.println (fachabi); 
 		loop2 = false;
-		
+		loop3 = true;
 		}
 	else { System.out.println("Falsche Eingabe. Bitte Y oder N antworten.");
 	loop2 = true;
@@ -105,19 +106,39 @@ Scanner input = new Scanner (System.in) ;
 	wiss = "Ja";  
 	System.out.println (wiss); 
 	loop3 = false;
-	
+	loop4 = true;
 	}
 	 else if (wiss.equals("N") || wiss.equals("n")) {
 		wiss = "Nein";  
 		System.out.println (wiss); 
 		loop3 = false;
-		
+		loop4 = true;
 		}
 	else { System.out.println("Falsche Eingabe. Bitte Y oder N antworten.");
 	loop3 = true;
+	
 	}
 	
 	
+	//Frage 4
+	System.out.println("Bist du eine Berufsausbildung Y N");											
+	while (loop2 == true) {
+	beruf = input.next();	
+	if (beruf.equals("y") || beruf.equals("Y") ) {
+	beruf = "Ja";  
+	System.out.println (beruf); 
+	loop4 = false;
+	
+	}
+	 else if (beruf.equals("N") || beruf.equals("n")) {
+		beruf = "Nein";  
+		System.out.println (beruf); 
+		loop4 = false;
+		
+		}
+	else { System.out.println("Falsche Eingabe. Bitte Y oder N antworten.");
+	loop4 = true;
+	}
 	
 	
 	
