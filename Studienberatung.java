@@ -70,6 +70,7 @@ Scanner input = new Scanner (System.in) ;
 	
 	
 	
+	
 	//Frage 3
 	System.out.println("Bist du Wissbegierig Y N");											
 	while (loop3 == true) {
